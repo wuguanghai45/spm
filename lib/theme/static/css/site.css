@@ -481,12 +481,15 @@ body.spmjs {
 }
 
 .CodeMirror.saved .CodeMirror-lines {
-  -webkit-animation: saved 0.8s ease-out 1;
-  animation: saved 0.8s ease-out 1;
+  -webkit-animation: saved 0.9s ease-out 1;
+  animation: saved 0.9s ease-out 1;
 }
 
 @-webkit-keyframes saved {
   0% {
+    background: #fff;
+  }
+  20% {
     background: #D6FFC2;
   }
   100% {
@@ -496,6 +499,9 @@ body.spmjs {
 
 @keyframes saved {
   0% {
+    background: #fff;
+  }
+  20% {
     background: #D6FFC2;
   }
   100% {

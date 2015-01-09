@@ -16,8 +16,6 @@
     <script src="{{static_url('js/html5shiv.js')}}"></script>
     <![endif]-->
     {%- block afterstyle %}{% endblock %}
-    <!-- codemirror.js + javascript.js + css.js + htmlmixed.js -->
-    <script src="http://tfs.alipayobjects.com/images/T12OpeXlljXXXXXXXX.js"></script>
   </head>
   <body class="spmjs">
     <div class="body-wrapper">
@@ -188,6 +186,9 @@
     }
 
     function enterEditor(toggleButton) {
+      if (!CodeMirror) {
+        return;
+      }
       $(toggleButton).parent().hide();
       if (!toggleButton.cm) {
         toggleButton.cm = CodeMirrorify($(toggleButton).parent().prev('.spm-doc-textarea'));
@@ -208,4 +209,6 @@
 
   });
   </script>
+  <!-- codemirror.js + javascript.js + css.js + htmlmixed.js -->
+  <script src="http://tfs.alipayobjects.com/images/T1cyxeXjthXXXXXXXX.js"></script>
 </html>

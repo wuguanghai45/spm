@@ -32,8 +32,9 @@ describe('test', function() {
       try {
         buffer.should.match(/should pass/);
         buffer.should.match(/ % Stmts |% Branches/);
-        buffer.should.match(/ index.js    |       100 /);
-        buffer.should.match(/ relative.js |       100 /);
+        buffer.should.match(/ a.noext.js  |       100 |       100 /);
+        buffer.should.match(/ index.js    |       100 |        50 /);
+        buffer.should.match(/ relative.js |       100 |       100 /);
       } catch(e) {
         err = e;
       }
